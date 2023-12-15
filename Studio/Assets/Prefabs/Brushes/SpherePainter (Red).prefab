@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1351640474779662471}
   - component: {fileID: 2861125758311859212}
   m_Layer: 0
-  m_Name: SphereNearPainter
+  m_Name: SpherePainter (Red)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a98a6289e395f642bf38afa6b768530, type: 2}
+  - {fileID: 2100000, guid: 86f6c443c2ae16b46a7ec8529a675f95, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
     Texture: {fileID: 0}
     Kernel: 1
     Channels: {x: 1, y: 1, z: 1, w: 1}
-  color: {r: 1, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 0, b: 0, a: 1}
   opacity: 1
   angle: 0
   scale: {x: 1, y: 1, z: 1}
