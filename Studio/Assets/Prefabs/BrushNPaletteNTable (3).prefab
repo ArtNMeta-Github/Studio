@@ -85,10 +85,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5559491916102798088}
-    - targetCorrespondingSourceObject: {fileID: 7687765665242236341, guid: ba48627bcf9e2ae468751fab981726f4,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5108989016218053902}
     - targetCorrespondingSourceObject: {fileID: -8118347570145577949, guid: ba48627bcf9e2ae468751fab981726f4,
         type: 3}
       insertIndex: -1
@@ -504,28 +500,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!64 &5108989016218053902
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8219284230573866277}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8617623688723133808, guid: ba48627bcf9e2ae468751fab981726f4, type: 3}
 --- !u!1 &8547303021146369575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1279387752044226889, guid: ba48627bcf9e2ae468751fab981726f4,
