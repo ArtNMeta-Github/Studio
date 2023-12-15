@@ -55,9 +55,6 @@
             "m_Id": "197aefc1708d43238433ca14d9c9dc23"
         },
         {
-            "m_Id": "45adca962d744d64a82444ce67e4a501"
-        },
-        {
             "m_Id": "8e2dcd18f804478f985d358ea4977b03"
         },
         {
@@ -91,7 +88,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "45adca962d744d64a82444ce67e4a501"
+                    "m_Id": "0e51707460c7485ab6e09669a9e7b75d"
                 },
                 "m_SlotId": 0
             }
@@ -134,20 +131,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "d746528b8d4d48ff9a47fad38ddd605b"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "45adca962d744d64a82444ce67e4a501"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "0e51707460c7485ab6e09669a9e7b75d"
                 },
                 "m_SlotId": 0
             }
@@ -397,13 +380,13 @@
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -819.0000610351563,
+            "x": -1176.0,
             "y": 192.0,
-            "width": 208.00006103515626,
-            "height": 435.00006103515627
+            "width": 208.0,
+            "height": 339.0
         }
     },
     "m_Slots": [
@@ -564,29 +547,6 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
-    "m_ObjectId": "34cef1dfedbd45aab1dbe8168541d423",
-    "m_Id": 0,
-    "m_DisplayName": "In",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "In",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
     },
     "m_Labels": []
 }
@@ -825,59 +785,6 @@
     },
     "m_Labels": [],
     "m_Space": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ChannelMixerNode",
-    "m_ObjectId": "45adca962d744d64a82444ce67e4a501",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Channel Mixer",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -429.0,
-            "y": 192.0,
-            "width": 208.0,
-            "height": 396.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "34cef1dfedbd45aab1dbe8168541d423"
-        },
-        {
-            "m_Id": "7aa7e46af1fa4fed97ca7d75be9cc51a"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_ChannelMixer": {
-        "outRed": {
-            "x": 2.0,
-            "y": 2.0,
-            "z": 2.0
-        },
-        "outGreen": {
-            "x": 2.0,
-            "y": 2.0,
-            "z": 2.0
-        },
-        "outBlue": {
-            "x": 2.0,
-            "y": 2.0,
-            "z": 2.0
-        }
-    }
 }
 
 {
@@ -1190,29 +1097,6 @@
     "m_ShaderOutputName": "Sampler",
     "m_StageCapability": 3,
     "m_BareResource": false
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
-    "m_ObjectId": "7aa7e46af1fa4fed97ca7d75be9cc51a",
-    "m_Id": 1,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_Labels": []
 }
 
 {
@@ -1621,10 +1505,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1089.0001220703125,
+            "x": -1424.0,
             "y": 227.99998474121095,
-            "width": 121.00006103515625,
-            "height": 34.00001525878906
+            "width": 121.0,
+            "height": 34.00004577636719
         }
     },
     "m_Slots": [
