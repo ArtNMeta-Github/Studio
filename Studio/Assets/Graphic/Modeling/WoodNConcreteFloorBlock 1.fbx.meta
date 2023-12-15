@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 58618be7ea7feb749ae5d93e914d7dff
+guid: b0f56e07ebeab34458c018681e6cf0d1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -12,7 +12,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: tile
+      name: Wood
     second: {fileID: 2100000, guid: 2af621306e3794145bdb0160c69601b8, type: 2}
   materials:
     materialImportMode: 2
@@ -42,7 +42,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
