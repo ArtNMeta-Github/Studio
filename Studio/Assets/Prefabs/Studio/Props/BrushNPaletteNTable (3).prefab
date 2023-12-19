@@ -372,17 +372,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ba48627bcf9e2ae468751fab981726f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7952209
+      value: 1.689
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba48627bcf9e2ae468751fab981726f4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000059604645
+      value: 0.096
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba48627bcf9e2ae468751fab981726f4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.8861507
+      value: 2.423
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba48627bcf9e2ae468751fab981726f4,
         type: 3}
@@ -550,14 +550,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 370958716267899086}
-    - targetCorrespondingSourceObject: {fileID: -1279387752044226889, guid: ba48627bcf9e2ae468751fab981726f4,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7782710760240089989}
-    - targetCorrespondingSourceObject: {fileID: -1279387752044226889, guid: ba48627bcf9e2ae468751fab981726f4,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1376882838310842600}
   m_SourcePrefab: {fileID: 100100000, guid: ba48627bcf9e2ae468751fab981726f4, type: 3}
 --- !u!4 &51440464657091825 stripped
 Transform:
@@ -899,8 +891,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -911,7 +903,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8219284230573866277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -1086,7 +1078,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.0004646706, y: 0.0000763701, z: 0.00039417273}
   m_Center: {x: -0.000999311, y: -0.0009355361, z: 0.0058221812}
@@ -1107,7 +1099,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.0004646706, y: 0.00008507022, z: 0.00039417273}
   m_Center: {x: -0.0009993146, y: -0.00009696937, z: 0.005822287}
@@ -1128,7 +1120,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.000084583924, y: 0.00048743005, z: 0.00039417273}
   m_Center: {x: -0.000572413, y: -0.00051802624, z: 0.00582248}
@@ -1149,7 +1141,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00006474541, y: 0.00048743063, z: 0.00039417273}
   m_Center: {x: -0.0014338903, y: -0.00051802775, z: 0.0058225724}
@@ -1170,7 +1162,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00011618139, y: 0.00048743075, z: 0.0005884744}
   m_Center: {x: -0.0013412724, y: -0.0005180301, z: 0.0053306674}
@@ -1191,7 +1183,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.000104434504, y: 0.00048743075, z: 0.0005884744}
   m_Center: {x: -0.0006675907, y: -0.0005180301, z: 0.005330728}
@@ -1212,7 +1204,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.0005563218, y: 0.00013373156, z: 0.0005884744}
   m_Center: {x: -0.0009965884, y: -0.00020711788, z: 0.0053308397}
@@ -1233,7 +1225,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00055632275, y: 0.00013397435, z: 0.0005884744}
   m_Center: {x: -0.0009965952, y: -0.00083040626, z: 0.005330919}
@@ -1254,7 +1246,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00055632275, y: 0.00048398646, z: 0.0000641808}
   m_Center: {x: -0.000996608, y: -0.0005180838, z: 0.0050109047}
@@ -1275,7 +1267,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00008068473, y: 0.000081898026, z: 0.000949883}
   m_Center: {x: -0.0006880123, y: -0.00022896251, z: 0.005538446}
@@ -1296,7 +1288,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00007788213, y: 0.000081898026, z: 0.0009498836}
   m_Center: {x: -0.0013194804, y: -0.00022896663, z: 0.0055385763}
@@ -1317,7 +1309,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.00007788213, y: 0.00008224406, z: 0.0009498836}
   m_Center: {x: -0.0013194804, y: -0.00081853557, z: 0.005538668}
@@ -1338,7 +1330,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.000095068084, y: 0.00008224414, z: 0.0009534414}
   m_Center: {x: -0.00066762464, y: -0.00081855775, z: 0.005540555}
@@ -1534,66 +1526,6 @@ MonoBehaviour:
   activated: 0
   current: {fileID: 0}
   preview: {fileID: 0}
---- !u!114 &7782710760240089989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8547303021146369575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9986da839a92d2d42975bac1e96cd24c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 1
-  activated: 0
-  current: {fileID: 0}
-  original: {fileID: 0}
---- !u!114 &1376882838310842600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8547303021146369575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6329a951f597a0488f4e1158c8f8c39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slot:
-    Index: 1
-    Name: _BaseMap
-  coord: 0
-  group:
-    index: 0
-  undoRedo: 0
-  stateLimit: 10
-  saveLoad: 0
-  saveName: 
-  width: 512
-  height: 512
-  texture: {fileID: 0}
-  color: {r: 1, g: 1, b: 1, a: 1}
-  format: 0
-  mipMaps: 0
-  filter: -1
-  aniso: -1
-  wrapU: -1
-  wrapV: -1
-  existing: 2
-  conversion: 0
-  localMaskTexture: {fileID: 0}
-  localMaskChannel: 0
-  shaderKeyword: 
-  hash:
-    v: 0
-  isDummy: 0
-  output: 
-  activated: 0
-  current: {fileID: 0}
-  preview: {fileID: 0}
 --- !u!1001 &7028482350126509150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1615,12 +1547,12 @@ PrefabInstance:
     - target: {fileID: 1746349768726985205, guid: 43794f6ac6083174b9d2ae33d9d25c7f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5714
+      value: 0.6618
       objectReference: {fileID: 0}
     - target: {fileID: 1746349768726985205, guid: 43794f6ac6083174b9d2ae33d9d25c7f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0376
+      value: 0.0528
       objectReference: {fileID: 0}
     - target: {fileID: 1746349768726985205, guid: 43794f6ac6083174b9d2ae33d9d25c7f,
         type: 3}
@@ -1684,12 +1616,12 @@ PrefabInstance:
     - target: {fileID: 2853280463557281972, guid: 43c20865e411eaf47aba8bf4ebfa0c1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6054
+      value: 0.6336
       objectReference: {fileID: 0}
     - target: {fileID: 2853280463557281972, guid: 43c20865e411eaf47aba8bf4ebfa0c1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0247
+      value: 0.0296
       objectReference: {fileID: 0}
     - target: {fileID: 2853280463557281972, guid: 43c20865e411eaf47aba8bf4ebfa0c1e,
         type: 3}

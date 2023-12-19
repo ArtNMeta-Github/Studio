@@ -75,6 +75,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2249963793037929118}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e147bba397e3e94bae01e3471b3becc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 427067618330668316}
     - targetCorrespondingSourceObject: {fileID: 5257621557703325157, guid: 2e147bba397e3e94bae01e3471b3becc,
         type: 3}
       insertIndex: -1
@@ -134,8 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 7983531186962976490}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -249,7 +252,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 1
+  m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -274,6 +277,18 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &427067618330668316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402756316916540239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df61013be60010a42933a47864a71427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6287073812964207611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5257621557703325157, guid: 2e147bba397e3e94bae01e3471b3becc,
