@@ -15,7 +15,6 @@ public class Spray : MonoBehaviour
         XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
         grabInteractable.activated.AddListener(x => StartShoot());
         grabInteractable.deactivated.AddListener(x => StopShoot());
-        grabInteractable.hoverExited.AddListener(x => StopShoot());
         grabInteractable.selectExited.AddListener(x => StopShoot());
     }
     public void StartShoot()
