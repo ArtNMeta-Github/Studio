@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 6238ec2f680d6aa488d41fb7e3567422
+guid: 8ec96e9acf13afe4f819693692131725
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Canvers.001
-    second: {fileID: 2100000, guid: 561f6c4bd3ee5814d9de2c20eff1627f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Canvers01
-    second: {fileID: 2100000, guid: 561f6c4bd3ee5814d9de2c20eff1627f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Canvers02
-    second: {fileID: 2100000, guid: 561f6c4bd3ee5814d9de2c20eff1627f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wood
-    second: {fileID: 2100000, guid: b664016365ddc8643a9051c191d1e5e1, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -52,7 +32,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
