@@ -53,7 +53,7 @@ MonoBehaviour:
   connector:
     hitSpacing: 0
     hitLimit: 30
-    connectHits: 0
+    connectHits: 1
     clipConnected: 0
   lastPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1689718725021088882
