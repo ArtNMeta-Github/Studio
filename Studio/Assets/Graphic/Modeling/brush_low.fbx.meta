@@ -3,7 +3,12 @@ guid: 8ec96e9acf13afe4f819693692131725
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paintbrush
+    second: {fileID: 2100000, guid: ef6f75276e5d84a4591dad931e813781, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
