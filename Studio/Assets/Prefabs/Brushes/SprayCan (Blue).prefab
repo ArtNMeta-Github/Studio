@@ -4860,7 +4860,7 @@ MonoBehaviour:
   raycastDistance: 0.0001
   layers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 759
   orientation: 0
   _camera: {fileID: 0}
   normal: 0

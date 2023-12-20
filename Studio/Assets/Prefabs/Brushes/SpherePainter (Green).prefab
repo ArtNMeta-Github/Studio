@@ -326,7 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 759
   group:
     index: 0
   targetModel: {fileID: 0}

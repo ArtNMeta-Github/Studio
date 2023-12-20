@@ -10,17 +10,20 @@ public class BrushColorChanger : MonoBehaviour
 
     public Renderer renderSource;
     
-    public GameObject colorableSource;
+    public GameObject painterSource;
 
     IColorable colorable;
     Material mat;
 
     private void Start()
     {
-        colorable = colorableSource.GetComponent<IColorable>();
+        colorable = painterSource.GetComponent<IColorable>();
 
         if(changeBrushColor)
+        {
             mat = renderSource.material;
+            mat.SetColor(materialColorPropertyName, colorable.Color);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

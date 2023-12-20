@@ -276,6 +276,11 @@ PrefabInstance:
       objectReference: {fileID: 8002513505900938415}
     - target: {fileID: 6413874921744885855, guid: 9f71818c04249ff4682cc9dd15a5ef91,
         type: 3}
+      propertyPath: painterSource
+      value: 
+      objectReference: {fileID: 6460100090411944848}
+    - target: {fileID: 6413874921744885855, guid: 9f71818c04249ff4682cc9dd15a5ef91,
+        type: 3}
       propertyPath: colorableSource
       value: 
       objectReference: {fileID: 6460100090411944848}
