@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Brush.001
+    second: {fileID: 2100000, guid: 01fee72aefc033b4c8a2070c88c568fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Metal.001
     second: {fileID: 2100000, guid: 814aa0960a1363c44bcf53000312b8c8, type: 2}
   - first:
