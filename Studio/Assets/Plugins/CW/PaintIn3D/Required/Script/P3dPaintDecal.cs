@@ -6,7 +6,7 @@ namespace PaintIn3D
 	/// <summary>This allows you to paint a decal at a hit point. Hit points will automatically be sent by any <b>P3dHit___</b> component on this GameObject, or its ancestors.</summary>
 	[HelpURL(P3dCommon.HelpUrlPrefix + "P3dPaintDecal")]
 	[AddComponentMenu(P3dCommon.ComponentHitMenuPrefix + "Paint Decal")]
-	public class P3dPaintDecal : MonoBehaviour, IHitPoint, IHitLine, IHitTriangle, IHitQuad, IHitCoord
+	public class P3dPaintDecal : MonoBehaviour, IHitPoint, IHitLine, IHitTriangle, IHitQuad, IHitCoord, IColorable
 	{
 		/// <summary>Only the P3dModel/P3dPaintable GameObjects whose layers are within this mask will be eligible for painting.</summary>
 		public LayerMask Layers { set { layers = value; } get { return layers; } } [SerializeField] private LayerMask layers = -1;
