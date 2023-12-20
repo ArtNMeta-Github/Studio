@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e147bba397e3e94bae01e3471b3becc
+guid: 5e1fda4172154144a893c850328b6fba
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,17 +7,17 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Brush.001
-    second: {fileID: 2100000, guid: 01fee72aefc033b4c8a2070c88c568fb, type: 2}
+      name: Brush.002
+    second: {fileID: 2100000, guid: 933a88a49869f024bbbb2719c0daf89f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Metal.001
+      name: Metal.002
     second: {fileID: 2100000, guid: 814aa0960a1363c44bcf53000312b8c8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wood 5
+      name: Wood.002
     second: {fileID: 2100000, guid: b664016365ddc8643a9051c191d1e5e1, type: 2}
   materials:
     materialImportMode: 2
