@@ -964,6 +964,10 @@ PrefabInstance:
       propertyPath: m_ModelPrefab
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1319746311, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1670256628, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_ModelParent
       value: 
@@ -971,6 +975,16 @@ PrefabInstance:
     - target: {fileID: 1670256628, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_ModelPrefab
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 941652828260492489, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055882120057747522, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
@@ -1037,6 +1051,11 @@ PrefabInstance:
       propertyPath: m_AttachTransform
       value: 
       objectReference: {fileID: 6689315307728374290}
+    - target: {fileID: 2449787133337329438, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 4343660526480754339, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       propertyPath: m_AttachTransform
