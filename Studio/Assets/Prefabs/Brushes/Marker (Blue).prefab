@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 1476005355498401480}
   - component: {fileID: -4699372844155907741}
   - component: {fileID: -6639519207249266060}
+  - component: {fileID: 6340180120011451445}
   m_Layer: 9
   m_Name: Marker (Blue)
   m_TagString: Untagged
@@ -509,6 +510,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df61013be60010a42933a47864a71427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6340180120011451445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8585978092104898576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6dd8bf4a3ae7e54c8825e46a7cf158b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useCustom: 0
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+  interactable: {fileID: 0}
 --- !u!1001 &5992790689332082425
 PrefabInstance:
   m_ObjectHideFlags: 0

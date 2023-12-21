@@ -262,6 +262,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 427067618330668316}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e147bba397e3e94bae01e3471b3becc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6987758336366615416}
   m_SourcePrefab: {fileID: 100100000, guid: 2e147bba397e3e94bae01e3471b3becc, type: 3}
 --- !u!23 &320175699309761465 stripped
 MeshRenderer:
@@ -467,6 +471,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df61013be60010a42933a47864a71427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6987758336366615416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402756316916540239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6dd8bf4a3ae7e54c8825e46a7cf158b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+  interactable: {fileID: 0}
 --- !u!4 &1746349768726985205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2e147bba397e3e94bae01e3471b3becc,
