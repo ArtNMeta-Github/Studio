@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 60309973585149087}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.09867803, z: -0, w: 0.9951194}
-  m_LocalPosition: {x: 0, y: 0.0506, z: -0.0023}
+  m_LocalPosition: {x: 0, y: 0.0464, z: -0.0023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -84,8 +84,8 @@ MonoBehaviour:
   color: {r: 1, g: 1, b: 1, a: 1}
   opacity: 1
   angle: 0
-  scale: {x: 1, y: 1, z: 0.5}
-  radius: 0.02
+  scale: {x: 0.9, y: 1, z: 0.2}
+  radius: 0.025
   hardness: 5
   tileTexture: {fileID: 0}
   tileTransform: {fileID: 0}

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PaintIn3D;
+using Unity.VisualScripting;
+
 public class BrushColorChanger : MonoBehaviour
 {
     public bool changeBrushColor = false;
@@ -17,6 +19,9 @@ public class BrushColorChanger : MonoBehaviour
 
     private void Start()
     {
+        if (string.IsNullOrEmpty(materialColorPropertyName))
+            materialColorPropertyName = "_BaseColor";
+
         colorable = painterSource.GetComponent<IColorable>();
 
         if(changeBrushColor)
