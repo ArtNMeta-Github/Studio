@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8526762439988663723}
   m_Layer: 0
   m_Name: Paint
-  m_TagString: Untagged
+  m_TagString: PaintPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9b4fe0769eab8a344bed9a6395b02f4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5363202381650356220}
   m_Layer: 0
   m_Name: Paint (2)
-  m_TagString: Untagged
+  m_TagString: PaintPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9b4fe0769eab8a344bed9a6395b02f4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 7322467082685930259}
   m_Layer: 0
   m_Name: Paint (1)
-  m_TagString: Untagged
+  m_TagString: PaintPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -664,7 +664,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9b4fe0769eab8a344bed9a6395b02f4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -813,6 +813,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 801216970525052352}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba48627bcf9e2ae468751fab981726f4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8557625481102786185}
     - targetCorrespondingSourceObject: {fileID: -5304897272793012984, guid: ba48627bcf9e2ae468751fab981726f4,
         type: 3}
       insertIndex: -1
@@ -995,8 +999,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1127,7 +1131,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 1
+  m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -1146,7 +1150,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 1
+  m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
@@ -2166,6 +2170,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 600465864768051364, guid: 735805179b162f74294100fdf3b649b0,
     type: 3}
   m_PrefabInstance: {fileID: 5103621602635609921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5905018958991742769
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2245629546107445115}
+    m_Modifications:
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.049748182
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6230303
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.20248747
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823788293506184600, guid: 15935000222a04844bd11aa6dcf9cd39,
+        type: 3}
+      propertyPath: m_Name
+      value: SprayCan (Red)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15935000222a04844bd11aa6dcf9cd39, type: 3}
+--- !u!4 &8557625481102786185 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2823788293505690040, guid: 15935000222a04844bd11aa6dcf9cd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 5905018958991742769}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7028482350126509150
 PrefabInstance:

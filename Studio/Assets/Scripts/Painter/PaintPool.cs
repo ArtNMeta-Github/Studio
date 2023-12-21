@@ -9,6 +9,9 @@ public class PaintPool : MonoBehaviour
     public string materialColorPropertyName;
     private void Start()
     {
+        if (string.IsNullOrEmpty(materialColorPropertyName))
+            materialColorPropertyName = "_BaseColor";
+
         var mat = GetComponent<Renderer>().material;
         
         AdjustColorToMaterial(mat);
