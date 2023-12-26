@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PaintPool
+  - Hand
   layers:
   - Default
   - TransparentFX
