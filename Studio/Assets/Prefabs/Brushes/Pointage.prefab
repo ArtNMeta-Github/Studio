@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7997507380492213981}
   - component: {fileID: 4633157973735081234}
   m_Layer: 0
-  m_Name: Pointillism
+  m_Name: Pointage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
