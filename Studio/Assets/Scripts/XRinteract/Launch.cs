@@ -6,10 +6,14 @@ public class Launch : MonoBehaviour
 {
     IXRSelectInteractable m_SelectInteractable;
 
+    XRGrabInteractable m_GrabInteractable;
+
     protected void OnEnable()
     {
         m_SelectInteractable = GetComponent<IXRSelectInteractable>();
         m_SelectInteractable.selectEntered.AddListener(OnSelectEntered);
+
+        m_GrabInteractable = GetComponent<XRGrabInteractable>();
     }
 
     protected void OnDisable()
