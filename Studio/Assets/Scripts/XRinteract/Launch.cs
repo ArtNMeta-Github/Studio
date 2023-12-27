@@ -6,14 +6,18 @@ public class Launch : MonoBehaviour
 {
     IXRSelectInteractable m_SelectInteractable;
 
-    XRGrabInteractable m_GrabInteractable;
-
+    public bool dynamicTrigger = false;
     protected void OnEnable()
     {
         m_SelectInteractable = GetComponent<IXRSelectInteractable>();
         m_SelectInteractable.selectEntered.AddListener(OnSelectEntered);
 
-        m_GrabInteractable = GetComponent<XRGrabInteractable>();
+        if (dynamicTrigger)
+            return;
+
+        m_SelectInteractable.selectEntered.AddListener(x => OnFirstSelected());
+        var grab = m_SelectInteractable as XRGrabInteractable;
+        grab.useDynamicAttach = false;
     }
 
     protected void OnDisable()
@@ -30,6 +34,17 @@ public class Launch : MonoBehaviour
         var attachTransform = args.interactorObject.GetAttachTransform(m_SelectInteractable);
         var originalAttachPose = args.interactorObject.GetLocalAttachPoseOnSelect(m_SelectInteractable);
         SetLocalPose(attachTransform, originalAttachPose);
+    }
+
+    void OnFirstSelected()
+    {
+        if (dynamicTrigger)
+            return;
+        
+        dynamicTrigger = true;
+
+        var grab = m_SelectInteractable as XRGrabInteractable;
+        grab.useDynamicAttach = true;
     }
 
     private void SetLocalPose(Transform transform, UnityEngine.Pose pose)
