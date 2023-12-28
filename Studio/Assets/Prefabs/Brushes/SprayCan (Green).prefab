@@ -4888,7 +4888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 759
   group:
     index: 0
   targetModel: {fileID: 0}
@@ -5210,7 +5210,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 7967615063073839618}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 1
+  m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
