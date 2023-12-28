@@ -569,6 +569,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 122084618895949332, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146340753648116383, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15365,7 +15375,7 @@ PrefabInstance:
     - target: {fileID: 1010804025315805213, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1038093126766026271, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
@@ -15375,7 +15385,7 @@ PrefabInstance:
     - target: {fileID: 1038093126766026271, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1039178861658576043, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
@@ -15610,7 +15620,7 @@ PrefabInstance:
     - target: {fileID: 7260093583970697041, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7288920425859535884, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
@@ -15675,7 +15685,7 @@ PrefabInstance:
     - target: {fileID: 8122078284351939265, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8242721560661393508, guid: 2b4979b3d6729ee4cb3ba344a1e18402,
         type: 3}
