@@ -71,7 +71,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Bend_Strength: 0.05
+    - _Bend_Strength: 0.005
     - _Direction: 1
     - _Noise_Scale: 1
     - _QueueControl: 0
