@@ -343,8 +343,8 @@ MonoBehaviour:
   opacity: 1
   angle: 0
   scale: {x: 1, y: 1, z: 1}
-  radius: 0.35
-  hardness: 5
+  radius: 0.4
+  hardness: 100
   tileTexture: {fileID: 0}
   tileTransform: {fileID: 0}
   tileOpacity: 1

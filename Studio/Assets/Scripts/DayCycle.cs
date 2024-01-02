@@ -14,21 +14,27 @@ public class DayCycle : MonoBehaviour
     [SerializeField] private Gradient equatorColor;
     [SerializeField] private Gradient sunColor;
 
-    private void Update()
-    {
-        timeOfDay += Time.deltaTime * sunRotationSpeed;
-        if (timeOfDay > 24)
-            timeOfDay = 0;
+    //private void Update()
+    //{
+    //    timeOfDay += Time.deltaTime * sunRotationSpeed;
+    //    if (timeOfDay > 24)
+    //        timeOfDay = 0;
 
-        UpdateSunRotation();
-        UpdateLighting();
-    }
+    //    UpdateSunRotation();
+    //    UpdateLighting();
+    //}
     private void OnValidate()
     {
         UpdateSunRotation();
         UpdateLighting();
     }
 
+    public void SetTimeValue(float value)
+    {
+        timeOfDay = value;
+        UpdateSunRotation();
+        UpdateLighting();
+    } 
     private void UpdateSunRotation()
     {
         float sunRotation = Mathf.Lerp(-90,270,timeOfDay/24);
