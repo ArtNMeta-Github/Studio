@@ -55,7 +55,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Clip: 0.0001
-    - _Grow: 0
+    - _Grow: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0
