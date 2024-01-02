@@ -20,8 +20,8 @@ RenderSettings:
   m_FogDensity: 0.001
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.49136183, g: 0.8691009, b: 0.7498745, a: 1}
-  m_AmbientEquatorColor: {r: 0.49136183, g: 0.8691009, b: 0.7498745, a: 1}
+  m_AmbientSkyColor: {r: 0.8665308, g: 0.9874593, b: 0.97223127, a: 1}
+  m_AmbientEquatorColor: {r: 0.8665308, g: 0.9874593, b: 0.97223127, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.78
   m_AmbientMode: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 410087040}
-  m_IndirectSpecularColor: {r: 0.358095, g: 0.7359982, b: 0.9729369, a: 1}
+  m_IndirectSpecularColor: {r: 0.33655202, g: 0.8161745, b: 0.9302482, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 9235e21aad383004ba4815536366ba54,
+  m_LightingDataAsset: {fileID: 112000000, guid: 3cdc355b0701f0c4faf4a8c8e564bf6b,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: dd1e405409c0e6449b23b661f5e1536d,
     type: 2}
@@ -4165,7 +4165,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.96061945, g: 0.66609657, b: 0.28895795, a: 1}
+  m_Color: {r: 0.9930643, g: 0.94119275, b: 0.8747709, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -4178,7 +4178,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -4224,7 +4224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.346117, y: 0, z: 0, w: 0.93819135}
+  m_LocalRotation: {x: 0.75183976, y: 0, z: 0, w: 0.65934587}
   m_LocalPosition: {x: 0, y: 6.067, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4267,7 +4267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 410087040}
-  timeOfDay: 8.7
+  timeOfDay: 12.5
   sunRotationSpeed: 0
   skyColor:
     serializedVersion: 2
@@ -9615,7 +9615,7 @@ PrefabInstance:
     - target: {fileID: 1650445575417585300, guid: 1fbb1b434b700d84ba23ebf6a00f192b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7763548
+      value: -2.707
       objectReference: {fileID: 0}
     - target: {fileID: 1650445575417585300, guid: 1fbb1b434b700d84ba23ebf6a00f192b,
         type: 3}
