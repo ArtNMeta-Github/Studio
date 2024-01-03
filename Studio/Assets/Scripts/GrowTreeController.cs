@@ -15,6 +15,7 @@ public class GrowTreeController : MonoBehaviour
     Material topLeavesSharedMat;
 
     public string growPropertyName = "_Grow";
+    public string leavesAlphaPropertyName = "_alpha";
 
     float growValue;
     public float GrowValue => growValue;
@@ -36,9 +37,9 @@ public class GrowTreeController : MonoBehaviour
     {
         float unit = 6f;
 
-        ChildObjGrowController(pillarMat, Mathf.InverseLerp(0f, unit, value));
-        ChildObjGrowController(mainBranchMat, Mathf.InverseLerp(unit, unit * 2f, value)); ;
-        ChildObjGrowController(bottomLeavesSharedMat, Mathf.InverseLerp(unit * 2f, unit * 3f, value));
-        ChildObjGrowController(topLeavesSharedMat, Mathf.InverseLerp(unit * 3f, unit * 4f, value));
+        pillarMat.SetFloat(growPropertyName, Mathf.InverseLerp(0f, unit, value));
+        mainBranchMat.SetFloat(growPropertyName, Mathf.InverseLerp(unit, unit * 2f, value));
+        bottomLeavesSharedMat.SetFloat(leavesAlphaPropertyName, Mathf.InverseLerp(unit * 2f, unit * 3f, value));
+        topLeavesSharedMat.SetFloat(leavesAlphaPropertyName, Mathf.InverseLerp(unit * 3f, unit * 4f, value));
     }
 }
