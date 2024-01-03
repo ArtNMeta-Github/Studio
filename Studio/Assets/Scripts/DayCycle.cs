@@ -10,6 +10,8 @@ public class DayCycle : MonoBehaviour
 
     [SerializeField] private Light sun;
     [SerializeField, Range(0,24)] private float timeOfDay;
+    public float TimeOfDay => timeOfDay;
+
     private float timeFraction;
     private float invDayTime = 1 / 24f;
     public float TimeFraction => timeFraction;
