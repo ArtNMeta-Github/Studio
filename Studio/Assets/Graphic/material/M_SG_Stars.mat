@@ -14,7 +14,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -24,6 +24,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SampleTexture2D_6c4352c79b2d4b0fa818e2f04def33ea_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 7f851669ba8080549b9fe2bc308365c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a850020edb524f8bb2a8cceb267283d1_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 7f851669ba8080549b9fe2bc308365c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -40,13 +48,12 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RotationSpeed: 0.0001
-    - _StarIntensity: 276.94
-    - _StarPower: 35
-    - _StarScale: 5000
+    - _RotationSpeed: 0.01
+    - _StarIntensity: 50.45
+    - _StarPower: 90.2
+    - _StarScale: 12
     m_Colors:
-    - _Color: {r: 0.990566, g: 0.94792825, b: 0.53733534, a: 0}
-    - _NormalizedAxes: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 0.86463225, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4785104321923091802
 MonoBehaviour:

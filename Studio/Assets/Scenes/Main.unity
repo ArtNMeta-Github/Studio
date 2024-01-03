@@ -17,11 +17,11 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.0025000006
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
-  m_AmbientEquatorColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.4472131, g: 0.9315977, b: 0.9137947, a: 1}
+  m_AmbientEquatorColor: {r: 0.5972131, g: 0.7689632, b: 0.5764859, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.78
   m_AmbientMode: 1
@@ -2289,7 +2289,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_Value
-      value: 5.9
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2299,7 +2299,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2315,7 +2315,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1609379500}
+      objectReference: {fileID: 410087043}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -2334,7 +2334,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainObjGrowController
+      value: SetTimeValue
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2344,7 +2344,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GrowTreeController, Assembly-CSharp
+      value: DayCycle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2894,11 +2894,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1465720398059456911, guid: fd28f23af44f73f4a95e33435872ad15,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2047441603}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd28f23af44f73f4a95e33435872ad15, type: 3}
 --- !u!1 &274373068
 GameObject:
@@ -4199,7 +4195,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.75473136, b: 0.43894798, a: 1}
   m_Intensity: 4.75
   m_Range: 10
   m_SpotAngle: 30
@@ -4258,7 +4254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.9659258, y: 0, z: 0, w: 0.25881907}
   m_LocalPosition: {x: 0, y: 6.067, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4301,7 +4297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 410087040}
-  timeOfDay: 0
+  timeOfDay: 16
   sunRotationSpeed: 0
   skyColor:
     serializedVersion: 2
@@ -4395,7 +4391,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   minFogDensity: 0
   maxFogDensity: 0.01
-  isDay: 0
+  isDay: 1
   dayStartTime: 6
   nightStartTime: 20
 --- !u!1 &422311535
@@ -5321,117 +5317,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a2e136a6720d51844917369f6445f16a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 521950823}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a2e136a6720d51844917369f6445f16a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 521950822}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e136a6720d51844917369f6445f16a, type: 3}
---- !u!1 &521950821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2e136a6720d51844917369f6445f16a,
-    type: 3}
-  m_PrefabInstance: {fileID: 521950820}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &521950822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521950821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
---- !u!20 &521950823
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521950821}
-  m_Enabled: 0
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &537193706
 GameObject:
   m_ObjectHideFlags: 0
@@ -18905,24 +18792,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2043711991}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2047441600 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1465720398059456911, guid: fd28f23af44f73f4a95e33435872ad15,
-    type: 3}
-  m_PrefabInstance: {fileID: 268636548}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2047441603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047441600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1895950ae83f77a42bd737329fbe334a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2053302299
 PrefabInstance:
   m_ObjectHideFlags: 0
