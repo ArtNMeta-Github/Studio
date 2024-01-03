@@ -42,9 +42,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.8
+    - _Alpha: 1
     - _NoiseScale: 20
-    - _NoiseSpeed: 0.05
+    - _NoiseSpeed: -0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RotationSpeed: 0.05
