@@ -22,6 +22,8 @@ public class GrowTreeController : MonoBehaviour
 
     float growValue;
     public float GrowValue => growValue;
+
+    public AnimationCurve curve;
     void Start()
     {
         pillarMat = pillar.material;
@@ -38,7 +40,6 @@ public class GrowTreeController : MonoBehaviour
         for (int i = 0; i < topLeaves.Length; i++)
             topLeavesMat[i] = topLeaves[i].material;
 
-
         MainObjGrowController(DayCycle.Instance.TimeOfDay);
     }
     public void ChildObjGrowController(Material mat, float value)
@@ -54,10 +55,14 @@ public class GrowTreeController : MonoBehaviour
         pillarMat.SetFloat(growPropertyName, Mathf.InverseLerp(0f, unit, value) * 0.3f) ;
         mainBranchMat.SetFloat(growPropertyName, Mathf.InverseLerp(unit, unit * 2f, value) * 0.3f);
 
-        foreach(var mat in bottomLeavesMat)
-            mat.SetFloat(leavesAlphaPropertyName, Mathf.InverseLerp(unit * 2f, unit * 3f, value) * Mathf.Sign(Mathf.PI * 2f));
+        float bottomLeavesAlphaValue = curve.Evaluate(Mathf.InverseLerp(unit * 2f, unit * 3f, value));
 
-        foreach(var mat in topLeavesMat)
-            mat.SetFloat(leavesAlphaPropertyName, Mathf.InverseLerp(unit * 3f, unit * 4f, value) * Mathf.Sign(Mathf.PI * 2f));
+        foreach (var mat in bottomLeavesMat)
+            mat.SetFloat(leavesAlphaPropertyName, bottomLeavesAlphaValue);
+
+        float topLeavesAlphaValue = curve.Evaluate(Mathf.InverseLerp(unit * 3f, unit * 4f, value));
+
+        foreach (var mat in topLeavesMat)
+            mat.SetFloat(leavesAlphaPropertyName, topLeavesAlphaValue);
     }
 }

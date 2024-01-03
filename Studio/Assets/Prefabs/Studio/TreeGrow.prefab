@@ -21,17 +21,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: facd1f99e50bf5d4595cc84970e4e202,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -19.036858
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: facd1f99e50bf5d4595cc84970e4e202,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.17386796
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: facd1f99e50bf5d4595cc84970e4e202,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: facd1f99e50bf5d4595cc84970e4e202,
         type: 3}
@@ -1224,6 +1224,30 @@ MonoBehaviour:
   - {fileID: 3164952992178434763}
   growPropertyName: _Grow
   leavesAlphaPropertyName: _alpha
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6208820292828016667 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: facd1f99e50bf5d4595cc84970e4e202,
