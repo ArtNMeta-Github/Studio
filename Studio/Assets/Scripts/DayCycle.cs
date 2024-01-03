@@ -23,20 +23,19 @@ public class DayCycle : MonoBehaviour
 
     [SerializeField] float minFogDensity;
     [SerializeField] float maxFogDensity;
-
-    public UnityEvent<bool> StartEv { get; }
-    public UnityEvent DayChangeEv { get; }
-    public UnityEvent NightChangeEv { get; }
+    public UnityEvent DayChangeEv { get; } = new();
+    public UnityEvent NightChangeEv { get; } = new();
 
     [SerializeField] private bool isDay = true;
+    public bool IsDay => isDay;
+
     public float dayStartTime = 6f;
     public float nightStartTime = 20f;
 
-    private void Awake() => Instance = this;
-    void Start()
+    private void Awake()
     {
+        Instance = this;
         isDay = timeOfDay > dayStartTime && timeOfDay < nightStartTime;
-        StartEv.Invoke(isDay);
     }
     //private void Update()
     //{
@@ -104,7 +103,6 @@ public class DayCycle : MonoBehaviour
 
     private void OnDestroy()
     {
-        StartEv.RemoveAllListeners();
         DayChangeEv.RemoveAllListeners();
         NightChangeEv.RemoveAllListeners();
     }
