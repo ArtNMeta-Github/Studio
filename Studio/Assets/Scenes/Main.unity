@@ -2289,7 +2289,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_Value
-      value: 8.7
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2299,7 +2299,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2315,7 +2315,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 410087043}
+      objectReference: {fileID: 1609379500}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -2334,7 +2334,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetTimeValue
+      value: MainObjGrowController
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2344,7 +2344,7 @@ PrefabInstance:
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DayCycle, Assembly-CSharp
+      value: GrowTreeController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1465720398059456909, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -2894,7 +2894,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1465720398059456911, guid: fd28f23af44f73f4a95e33435872ad15,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2047441603}
   m_SourcePrefab: {fileID: 100100000, guid: fd28f23af44f73f4a95e33435872ad15, type: 3}
 --- !u!1 &274373068
 GameObject:
@@ -4254,7 +4258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 6.067, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4297,7 +4301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 410087040}
-  timeOfDay: 24
+  timeOfDay: 0
   sunRotationSpeed: 0
   skyColor:
     serializedVersion: 2
@@ -18901,6 +18905,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2043711991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2047441600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1465720398059456911, guid: fd28f23af44f73f4a95e33435872ad15,
+    type: 3}
+  m_PrefabInstance: {fileID: 268636548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2047441603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047441600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1895950ae83f77a42bd737329fbe334a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2053302299
 PrefabInstance:
   m_ObjectHideFlags: 0
