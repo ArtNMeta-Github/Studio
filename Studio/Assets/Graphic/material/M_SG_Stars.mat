@@ -49,11 +49,12 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RotationSpeed: 0.01
+    - _Scale: 0
     - _StarIntensity: 50.45
-    - _StarPower: 90.2
+    - _StarPower: 5
     - _StarScale: 12
     m_Colors:
-    - _Color: {r: 1, g: 0.86463225, b: 0, a: 0}
+    - _Color: {r: 0.1470273, g: 0.1811643, b: 0.27889434, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4785104321923091802
 MonoBehaviour:
