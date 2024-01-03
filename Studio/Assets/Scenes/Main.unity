@@ -14210,7 +14210,7 @@ PrefabInstance:
     - target: {fileID: 9200927048614876655, guid: a16902080ea74f341aa95b1e9d007bb6,
         type: 3}
       propertyPath: m_Colliders.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9200927048614876655, guid: a16902080ea74f341aa95b1e9d007bb6,
         type: 3}
@@ -14237,6 +14237,11 @@ PrefabInstance:
       propertyPath: m_Colliders.Array.data[4]
       value: 
       objectReference: {fileID: 291763497}
+    - target: {fileID: 9200927048614876655, guid: a16902080ea74f341aa95b1e9d007bb6,
+        type: 3}
+      propertyPath: m_Colliders.Array.data[5]
+      value: 
+      objectReference: {fileID: 1823497745}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16911,6 +16916,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc381044174fecc4e9103b14f47da798, type: 3}
+--- !u!64 &1823497745 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 2315950072441686589, guid: fc381044174fecc4e9103b14f47da798,
+    type: 3}
+  m_PrefabInstance: {fileID: 1823497744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1841137252
 PrefabInstance:
   m_ObjectHideFlags: 0
