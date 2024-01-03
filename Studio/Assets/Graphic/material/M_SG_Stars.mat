@@ -40,7 +40,13 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    - _RotationSpeed: 0.0001
+    - _StarIntensity: 276.94
+    - _StarPower: 35
+    - _StarScale: 5000
+    m_Colors:
+    - _Color: {r: 0.990566, g: 0.94792825, b: 0.53733534, a: 0}
+    - _NormalizedAxes: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4785104321923091802
 MonoBehaviour:
