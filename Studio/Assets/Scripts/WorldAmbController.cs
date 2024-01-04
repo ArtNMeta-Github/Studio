@@ -21,14 +21,14 @@ public class WorldAmbController : MonoBehaviour
     }
     private void StartEv(bool isDay)
     {
-        AudioSource currAmb = isDay ? dayAmb : nightAmb;
-        AudioSource holdAmb = isDay ? nightAmb : dayAmb;
+        AudioSource mainAmb = isDay ? dayAmb : nightAmb;
+        AudioSource secondaryAmb = isDay ? nightAmb : dayAmb;
 
-        currAmb.volume = 1f;
-        currAmb.Play();
+        mainAmb.volume = 1f;
+        mainAmb.Play();
 
-        holdAmb.volume = 0f;
-        holdAmb.Stop();
+        secondaryAmb.volume = 0f;
+        secondaryAmb.Stop();
     }
 
     private void NightChangeEv()
