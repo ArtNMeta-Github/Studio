@@ -48,7 +48,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RotationSpeed: 0.01
+    - _RotationSpeed: 0.005
     - _Scale: 0
     - _StarIntensity: 50.45
     - _StarPower: 5
