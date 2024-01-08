@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class GrowTreeController : MonoBehaviour
 {
@@ -20,10 +21,11 @@ public class GrowTreeController : MonoBehaviour
     public string growPropertyName = "_Grow";
     public string leavesAlphaPropertyName = "_alpha";
 
-    float growValue;
-    public float GrowValue => growValue;
-
     public AnimationCurve curve;
+
+    private int growStep = 0;
+    public float startGrowValue = 0.05f;
+    private float currGrowValue = 0;
     void Start()
     {
         pillarMat = pillar.material;
@@ -40,13 +42,13 @@ public class GrowTreeController : MonoBehaviour
         for (int i = 0; i < topLeaves.Length; i++)
             topLeavesMat[i] = topLeaves[i].material;
 
-        MainObjGrowController(DayCycle.Instance.TimeOfDay);
+        //ObjGrowByTime(DayCycle.Instance.TimeOfDay);
+
+        currGrowValue = startGrowValue;
+
+        SetGrowStepZero();
     }
-    public void ChildObjGrowController(Material mat, float value)
-    {
-        mat.SetFloat(growPropertyName, value);
-    }
-    public void MainObjGrowController(float value)
+    public void ObjGrowByTime(float value)
     {
         if (pillarMat == null) return;
 
@@ -64,5 +66,50 @@ public class GrowTreeController : MonoBehaviour
 
         foreach (var mat in topLeavesMat)
             mat.SetFloat(leavesAlphaPropertyName, topLeavesAlphaValue);
+    }
+    public void ObjGrowByWater(float value)
+    {
+        currGrowValue += value;
+
+        switch (growStep)
+        {
+            case 0:
+                pillarMat.SetFloat(growPropertyName, currGrowValue);
+                break;
+            case 1:
+                mainBranchMat.SetFloat(growPropertyName, currGrowValue);
+                break;
+            case 2:
+                foreach (var mat in bottomLeavesMat)
+                    mat.SetFloat(leavesAlphaPropertyName, currGrowValue);
+                break;
+            case 3:
+                foreach (var mat in topLeavesMat)
+                    mat.SetFloat(leavesAlphaPropertyName, currGrowValue);
+                break;
+        }
+
+        if ((growStep == 1 || growStep == 0) && currGrowValue > 0.4f)
+        {
+            currGrowValue = 0f;
+            ++growStep;
+        }   
+
+        if (currGrowValue < 1f)
+            return;
+
+        currGrowValue = 0f;
+        ++growStep;
+    }
+    private void SetGrowStepZero()
+    {
+        pillarMat.SetFloat(growPropertyName, startGrowValue);
+        mainBranchMat.SetFloat(growPropertyName, 0f);
+
+        foreach (var mat in bottomLeavesMat)
+            mat.SetFloat(leavesAlphaPropertyName, 0f);
+
+        foreach (var mat in topLeavesMat)
+            mat.SetFloat(leavesAlphaPropertyName, 0f);
     }
 }
