@@ -3,7 +3,17 @@ guid: d90940c4c6675d1478a9d34efa2313f8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clock
+    second: {fileID: 2100000, guid: 3112ca8dc7ed3354c9bd8cc112a5cc04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wrist strap
+    second: {fileID: 2100000, guid: 3112ca8dc7ed3354c9bd8cc112a5cc04, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
