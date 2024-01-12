@@ -8,7 +8,7 @@ public class MarblingDistortionData : MonoBehaviour
     private Material material;
 
     public float distortionStartValue = 0.5f;
-    public float noiseScaleStartValue = 0.5f;
+    public float noiseScaleStartValue = 50f;
     private void Start()
     {
         target = gameObject.GetComponent<Renderer>();

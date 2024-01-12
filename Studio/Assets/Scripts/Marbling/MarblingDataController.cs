@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MarblingDistortionController : MonoBehaviour
+public class MarblingDataController : MonoBehaviour
 {
     public Slider distortionSlider;
     public Slider noiseScaleSlider;
@@ -17,8 +17,8 @@ public class MarblingDistortionController : MonoBehaviour
         distortionSlider.onValueChanged.AddListener(distortionData.SetDistortionValue);
 
         noiseScaleSlider.minValue = 0f;
-        noiseScaleSlider.maxValue = 1f;
+        noiseScaleSlider.maxValue = 100f;
         noiseScaleSlider.value = distortionData.noiseScaleStartValue;
         noiseScaleSlider.onValueChanged.AddListener(distortionData.SetNoiseScaleValue);
-    }
+    } 
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using CW.Common;
+using UnityEngine.Events;
 
 namespace PaintIn3D
 {
@@ -9,9 +10,9 @@ namespace PaintIn3D
 	[HelpURL(P3dCommon.HelpUrlPrefix + "P3dMaterialCloner")]
 	[AddComponentMenu(P3dCommon.ComponentMenuPrefix + "Material Cloner")]
 	public class P3dMaterialCloner : MonoBehaviour
-	{
-		/// <summary>The material index that will be cloned. This matches the Materials list in your MeshRenderer/SkinnedMeshRenderer, where 0 is the first material.</summary>
-		public int Index { set { index = value; } get { return index; } } [SerializeField] private int index;
+	{	
+        /// <summary>The material index that will be cloned. This matches the Materials list in your MeshRenderer/SkinnedMeshRenderer, where 0 is the first material.</summary>
+        public int Index { set { index = value; } get { return index; } } [SerializeField] private int index;
 
 		[System.NonSerialized]
 		private Renderer cachedRenderer;
@@ -100,24 +101,26 @@ namespace PaintIn3D
 		[ContextMenu("Activate")]
 		public void Activate()
 		{
-			if (activated == false && index >= 0)
-			{
-				var materials = CachedRenderer.sharedMaterials;
+			if (activated || index < 0)
+				return;
 
-				if (index < materials.Length)
-				{
-					original = materials[index];
+            var materials = CachedRenderer.sharedMaterials;
 
-					if (original != null)
-					{
-						activated = true;
-						current   = Instantiate(original);
+            if (index < materials.Length)
+            {
+                original = materials[index];
 
-						ReplaceAll(original, current);
-					}
-				}
-			}
+                if (original != null)
+                {
+                    activated = true;
+                    current = Instantiate(original);
+
+                    ReplaceAll(original, current);
+                }
+            }
 		}
+
+		
 
 #if UNITY_EDITOR
 		[ContextMenu("Deactivate", true)]
