@@ -47,17 +47,17 @@ Material:
     m_Ints: []
     m_Floats:
     - _Absorption_Coefficient: 0.41
-    - _Depth: 0.45
-    - _Displacement: 0.1
+    - _Depth: 0.05
+    - _Displacement: 0
     - _DispleceScale: 1
-    - _DispleceSpeed: 10
+    - _DispleceSpeed: 1
     - _NoiseScale: 3
     - _NormalStrength: 50.6
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0.8
     - _Speed: 0.1
-    - _Strength: 2
+    - _Strength: 0.05
     - _WaveSpeed: 0.1
     m_Colors:
     - _Absorption_Colour: {r: 1, g: 1, b: 1, a: 0}
