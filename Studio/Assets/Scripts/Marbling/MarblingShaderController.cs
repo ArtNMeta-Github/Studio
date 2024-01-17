@@ -12,6 +12,6 @@ public class MarblingShaderController : MonoBehaviour
     {
         slider = GetComponent<Slider>();
 
-        slider.onValueChanged.AddListener(shaderData.SetDistortionValue);
+        //slider.onValueChanged.AddListener(shaderData.SetDistortionValue);
     }
 }
