@@ -598,4 +598,3 @@ MonoBehaviour:
   main: {fileID: 5452087726552782451}
   distortion: {fileID: 5365320358780165643}
   distortionProperty: _DistortionTexture
-  distortionValueProperty: _Distortion

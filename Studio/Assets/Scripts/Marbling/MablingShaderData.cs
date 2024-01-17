@@ -11,7 +11,7 @@ public class MablingShaderData : MonoBehaviour
     private Material mainMat;
 
     public string distortionProperty = "_DistortionTexture";
-    public string distortionValueProperty = "_Distortion";
+    //public string distortionValueProperty = "_Distortion";
 
     public void Start()
     {
@@ -26,8 +26,8 @@ public class MablingShaderData : MonoBehaviour
 
         //SetDistortionValue(1f);
     }
-    public void SetDistortionValue(float value)
-    {        
-        mainMat.SetFloat(distortionValueProperty, value);
-    }
+    //public void SetDistortionValue(float value)
+    //{        
+    //    mainMat.SetFloat(distortionValueProperty, value);
+    //}
 }
