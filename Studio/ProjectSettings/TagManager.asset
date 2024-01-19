@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PaintPool
   - Hand
+  - Brush
   layers:
   - Default
   - TransparentFX
