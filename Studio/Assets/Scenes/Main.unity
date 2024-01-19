@@ -22677,7 +22677,12 @@ PrefabInstance:
     - target: {fileID: 1041254753719390281, guid: a39916dabb38d0c43ade08391a220b8f,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 12.77
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041254753719390281, guid: a39916dabb38d0c43ade08391a220b8f,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1041254753719390281, guid: a39916dabb38d0c43ade08391a220b8f,
         type: 3}
