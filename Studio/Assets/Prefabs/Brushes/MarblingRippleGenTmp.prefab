@@ -166,8 +166,8 @@ MonoBehaviour:
   opacity: 1
   angle: 0
   scale: {x: 1, y: 1, z: 1}
-  radius: 0.005
-  hardness: 3
+  radius: 0.01
+  hardness: 5
   wrapping: 1
   normalFront: 1
   normalBack: 0
