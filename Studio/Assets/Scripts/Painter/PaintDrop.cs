@@ -8,7 +8,10 @@ public class PaintDrop : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        destroyTrigger = true;        
+        if (other.CompareTag("Brush"))
+            return;
+
+        destroyTrigger = true;
     }
 
     private void LateUpdate()

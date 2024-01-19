@@ -9,7 +9,11 @@ namespace PaintIn3D
 	[AddComponentMenu(P3dCommon.ComponentHitMenuPrefix + "Hit Between")]
 	public class P3dHitBetween : MonoBehaviour
 	{
-		public enum PhaseType
+        //
+        public Vector3 finalPosition;
+        //
+
+        public enum PhaseType
 		{
 			Update,
 			FixedUpdate
@@ -168,7 +172,7 @@ namespace PaintIn3D
 			}
 		}
 
-		private void SubmitHit(bool preview)
+		protected virtual void SubmitHit(bool preview)
 		{
 			if (pointA != null && pointB != null)
 			{
@@ -203,7 +207,7 @@ namespace PaintIn3D
 				// Hit 2D?
 				else if (hit2D.collider != null)
 				{
-					CalcHitData(hit2D.point, hit2D.normal, ray, out finalPosition, out finalRotation);
+                    CalcHitData(hit2D.point, hit2D.normal, ray, out finalPosition, out finalRotation);
 
 					fraction = (hit3D.distance + offset) / maxDistance;
 
@@ -221,9 +225,10 @@ namespace PaintIn3D
 			}
 		}
 
-		private void CalcHitData(Vector3 hitPoint, Vector3 hitNormal, Ray ray, out Vector3 finalPosition, out Quaternion finalRotation)
+		protected virtual void CalcHitData(Vector3 hitPoint, Vector3 hitNormal, Ray ray, out Vector3 finalPosition, out Quaternion finalRotation)
 		{
 			finalPosition = hitPoint + hitNormal * offset;
+			this.finalPosition = finalPosition;
 
 			switch (orientation)
 			{
