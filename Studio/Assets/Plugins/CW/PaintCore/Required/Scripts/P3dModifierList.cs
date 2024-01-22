@@ -83,8 +83,18 @@ namespace PaintIn3D
 			if (modifiers != null) foreach (var modifier in modifiers) if (modifier != null) if (modifier.Preview || !preview) modifier.ModifyPosition(ref position, pressure);
 		}
 
+		//
+		public P3dModifyPositionRandom GetP3dModifyPositionRandom()
+		{
+			if (modifiers != null && modifiers[0] is P3dModifyPositionRandom)
+				return modifiers[0] as P3dModifyPositionRandom;
+
+			return null;
+        }
+        //
+
 #if UNITY_EDITOR
-		public void DrawEditorLayout(SerializedObject serializedObject, Object target, params string[] groups)
+        public void DrawEditorLayout(SerializedObject serializedObject, Object target, params string[] groups)
 		{
 			serializedObject.ApplyModifiedProperties();
 

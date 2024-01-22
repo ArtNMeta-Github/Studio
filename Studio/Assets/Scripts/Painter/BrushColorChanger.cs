@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PaintIn3D;
-using Unity.VisualScripting;
 
 public class BrushColorChanger : MonoBehaviour
 {
@@ -15,9 +14,9 @@ public class BrushColorChanger : MonoBehaviour
     public GameObject painterSource;
 
     IColorable colorable;
-    Material mat;
+    protected Material mat;
 
-    private void Start()
+    protected virtual void Start()
     {
         if (string.IsNullOrEmpty(materialColorPropertyName))
             materialColorPropertyName = "_BaseColor";
@@ -31,7 +30,7 @@ public class BrushColorChanger : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("PaintPool"))
         {
