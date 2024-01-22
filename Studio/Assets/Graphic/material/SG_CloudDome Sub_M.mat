@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_SG_CloudDome
-  m_Shader: {fileID: -6465566751694194690, guid: fca9841cd1b631c409dcbed905f1fafc,
+  m_Name: SG_CloudDome Sub_M
+  m_Shader: {fileID: -6465566751694194690, guid: c43eab0d1d7777b469547c93283963a7,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,10 +44,10 @@ Material:
     m_Floats:
     - _Alpha: 1
     - _NoiseScale: 20
-    - _NoiseSpeed: -0.005
+    - _NoiseSpeed: -0.01
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RotationSpeed: 0.05
+    - _RotationSpeed: 0.1
     - _Speed: 0.1
     m_Colors: []
   m_BuildTextureStacks: []
