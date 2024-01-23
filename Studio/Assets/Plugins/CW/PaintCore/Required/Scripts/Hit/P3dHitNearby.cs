@@ -90,6 +90,11 @@ namespace PaintIn3D
 				UpdateHit();
 			}
 		}
+		public void UpdateOnce()
+		{
+            connector.Update();
+            UpdateHit();
+        }
 
 		protected virtual void FixedUpdate()
 		{
