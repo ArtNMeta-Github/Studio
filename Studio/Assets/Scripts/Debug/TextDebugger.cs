@@ -14,6 +14,5 @@ public class TextDebugger : MonoBehaviour
         instance = this;
         textMeshPro = GetComponent<TextMeshPro>();
     }
-
-    public void SetText(string text) => textMeshPro.text = text;
+    public static void SetText(string text) => instance.textMeshPro.text = text;
 }
