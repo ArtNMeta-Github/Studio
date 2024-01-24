@@ -17,7 +17,11 @@ public class StickPointSeeker : MonoBehaviour
 
     private void Start()
     {
+        if(target == null)
+            target = StickerHandler.Instance;
+
         targetTag = target.tag;
+        rayTagetLayer = target.gameObject.layer;
         targetTransform = target.transform;        
 
         interactable = GetComponent<XRGrabInteractable>();

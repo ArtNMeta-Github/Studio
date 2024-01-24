@@ -7,11 +7,17 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class StickerHandler : MonoBehaviour
 {
+    public static StickerHandler Instance;
+
     public XRSocketInteractor stickerPrefab;
     XRSocketInteractor sticker;
     WaitForSeconds coroutineWait;
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Start()
-    {   
+    {
         InstanceNewSticker();
         coroutineWait = new WaitForSeconds(2f);
     }
