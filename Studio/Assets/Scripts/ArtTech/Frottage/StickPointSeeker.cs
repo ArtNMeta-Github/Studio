@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 public class StickPointSeeker : MonoBehaviour
@@ -39,7 +40,7 @@ public class StickPointSeeker : MonoBehaviour
         {
             return;
         }
-
+        target.SetStickZRotation(transform.localEulerAngles.z);
         target.SetStickerPosition(hit.point + targetTransform.forward * 0.001f);
     }
 }

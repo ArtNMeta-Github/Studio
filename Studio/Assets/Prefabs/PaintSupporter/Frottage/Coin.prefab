@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 4232422984762263710}
   - component: {fileID: 2475914433850690543}
   - component: {fileID: 2566354242093575178}
-  - component: {fileID: 6041568183584938716}
   - component: {fileID: 8741620051291586731}
   - component: {fileID: 8140846712545741046}
   - component: {fileID: 8371509282370687833}
+  - component: {fileID: 2236619074291191870}
   m_Layer: 9
   m_Name: Coin
   m_TagString: XRSocketAble
@@ -268,27 +268,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!65 &6041568183584938716
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466706326129984787}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 6.1232336e-17}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8741620051291586731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,3 +356,24 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!65 &2236619074291191870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466706326129984787}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.005}
+  m_Center: {x: 0, y: 0, z: 0}
