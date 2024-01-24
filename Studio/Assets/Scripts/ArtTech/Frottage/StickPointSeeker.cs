@@ -8,7 +8,7 @@ public class StickPointSeeker : MonoBehaviour
     public StickerHandler target;
     string targetTag;
     Transform targetTransform;
-    public LayerMask rayTagetLayer;
+    LayerMask rayTagetLayer;
 
     public float maxRayDist = 0.15f;
     XRGrabInteractable interactable;
@@ -20,8 +20,9 @@ public class StickPointSeeker : MonoBehaviour
         if(target == null)
             target = StickerHandler.Instance;
 
-        targetTag = target.tag;
-        rayTagetLayer = target.gameObject.layer;
+        rayTagetLayer = 1;
+
+        targetTag = target.tag;        
         targetTransform = target.transform;        
 
         interactable = GetComponent<XRGrabInteractable>();
