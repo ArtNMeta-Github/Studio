@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5871632974755271203
+--- !u!114 &-8347050523200163798
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_SG_Wall
-  m_Shader: {fileID: -6465566751694194690, guid: 29cc9f5399fb5d74f90eb7abe234f75e,
+  m_Name: SG_Leave_M
+  m_Shader: {fileID: -6465566751694194690, guid: 16c03385b3d18c14399b6dafde0d6ebe,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -30,7 +30,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -38,19 +38,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Diffuse:
-        m_Texture: {fileID: 2800000, guid: cb65fe4fbf39a4b44875479a94f4fe8e, type: 3}
+        m_Texture: {fileID: 2800000, guid: e3de32d737ef22c42a039b08e4968335, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Nor:
-        m_Texture: {fileID: 2800000, guid: ff470e6c565603d479381e3faa0f102d, type: 3}
+    - _SampleTexture2D_01b794ab1eec4347a99fa7b4541174ed_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: befd6aa354edf9443aeb6065c366f7fb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Rough:
-        m_Texture: {fileID: 2800000, guid: 88cd022a973e4a9429639aad5cf1fee9, type: 3}
+    - _SampleTexture2D_0e131b5c85ea43d2886a1c57002d99f9_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: e3de32d737ef22c42a039b08e4968335, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _disp:
-        m_Texture: {fileID: 2800000, guid: a20d0e565c8477e4ca3b1eb4010cc954, type: 3}
+    - _SampleTexture2D_7d169c335630455aa136b3537f8b59de_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: edd9fc9dad4d8204abaf101c312491c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -67,12 +67,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Emission_Power: 0.71
-    - _Float: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Value: 26.4
-    m_Colors:
-    - _RGB: {r: 10, g: 10, b: 10, a: 0}
-    - _Value_wall: {r: 1, g: 1, b: 0, a: 0}
+    - _alpha: 1
+    m_Colors: []
   m_BuildTextureStacks: []

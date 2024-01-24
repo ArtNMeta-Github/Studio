@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_SG_Marbling_NoTexture
+  m_Name: SG_Marbling_NoTexture_M
   m_Shader: {fileID: -6465566751694194690, guid: df6707717cec3c04bb77bf0f9e886230,
     type: 3}
   m_Parent: {fileID: 0}
