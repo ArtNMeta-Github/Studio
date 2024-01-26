@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 public class StickPointSeeker : MonoBehaviour
@@ -7,7 +8,7 @@ public class StickPointSeeker : MonoBehaviour
     public StickerHandler target;
     string targetTag;
     Transform targetTransform;
-    public LayerMask rayTagetLayer;
+    LayerMask rayTagetLayer;
 
     public float maxRayDist = 0.15f;
     XRGrabInteractable interactable;
@@ -16,7 +17,12 @@ public class StickPointSeeker : MonoBehaviour
 
     private void Start()
     {
-        targetTag = target.tag;
+        if(target == null)
+            target = StickerHandler.Instance;
+
+        rayTagetLayer = 1;
+
+        targetTag = target.tag;        
         targetTransform = target.transform;        
 
         interactable = GetComponent<XRGrabInteractable>();
@@ -39,7 +45,7 @@ public class StickPointSeeker : MonoBehaviour
         {
             return;
         }
-
+        target.SetStickZRotation(transform.localEulerAngles.z);
         target.SetStickerPosition(hit.point + targetTransform.forward * 0.001f);
     }
 }
