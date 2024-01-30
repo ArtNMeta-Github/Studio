@@ -399,7 +399,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f671846b85427b4c96e8083b3cddbd8, type: 2}
+  - {fileID: 2100000, guid: 9e71f9028262c73459e928483d49546e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot:
     Index: 0
-    Name: _BumpMap
+    Name: _Normal
   coord: 0
   group:
     index: 10
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot:
     Index: 0
-    Name: _MainTex
+    Name: _Main
   coord: 0
   group:
     index: 0

@@ -1,7 +1,6 @@
 using PaintIn3D;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -36,10 +35,10 @@ public class StickerHandler : MonoBehaviour
             sticker.GetComponent<Collider>().enabled = false;
 
         sticker = Instantiate(stickerPrefab, transform);
-        sticker.selectEntered.AddListener(StickTarget);        
+        sticker.selectEntered.AddListener(StickToTarget);        
     }
 
-    void StickTarget(SelectEnterEventArgs call)
+    void StickToTarget(SelectEnterEventArgs call)
     {
         var targetTransform = call.interactableObject.transform;
         targetTransform.GetComponent<StickPointSeeker>().enabled = false;
@@ -51,9 +50,9 @@ public class StickerHandler : MonoBehaviour
 
         InstanceNewSticker();
 
-        StartCoroutine(ApplayNormalmapGradually(targetTransform));
+        StartCoroutine(ApplyNormalmapGradually(targetTransform));
     }
-    IEnumerator ApplayNormalmapGradually(Transform targetTransform)
+    IEnumerator ApplyNormalmapGradually(Transform targetTransform)
     {
         var hitNearby = targetTransform.GetComponent<P3dHitNearby>();
         hitNearby.enabled = true;
