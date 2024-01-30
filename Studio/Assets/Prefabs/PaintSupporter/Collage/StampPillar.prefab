@@ -48,7 +48,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6015951568483348496
 Transform:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 1759214325671344241}
   - component: {fileID: 4649045416402963705}
   - component: {fileID: 5819594394702453988}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: StampHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}

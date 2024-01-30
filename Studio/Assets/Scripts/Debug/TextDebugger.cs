@@ -6,10 +6,10 @@ using UnityEngine;
 public class TextDebugger : MonoBehaviour
 {
     private static TextDebugger instance;
-    public static TextDebugger Instance => instance;
+    //public static TextDebugger Instance => instance;
 
     TextMeshPro textMeshPro;
-    private void Start()
+    private void Awake()
     {
         instance = this;
         textMeshPro = GetComponent<TextMeshPro>();

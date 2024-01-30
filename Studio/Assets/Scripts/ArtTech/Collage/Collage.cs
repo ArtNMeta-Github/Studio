@@ -2,7 +2,6 @@ using PaintIn3D;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class Collage : MonoBehaviour
 {
@@ -16,5 +15,10 @@ public class Collage : MonoBehaviour
     {
         boxCollider.transform.position = newPos;
         boxCollider.size = newSize;
+    }
+    public void SwitchToOrigin()
+    {
+        GetComponent<P3dPaintableTexture>().enabled = false;
+        OriginCollagePrinter.InstantiateCollage(transform.position,transform.rotation);
     }
 }
