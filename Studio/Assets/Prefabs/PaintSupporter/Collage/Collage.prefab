@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 1070765858926772349}
   - component: {fileID: 1486368558739099364}
   - component: {fileID: 3579876926290219793}
+  - component: {fileID: -1936325401315152664}
   m_Layer: 0
   m_Name: Collage
   m_TagString: CollagePaper
@@ -428,5 +429,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58ba52536604db4bbb3df51519a2b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originPrefab: {fileID: 7892028637215623568}
-  originMat: {fileID: 2100000, guid: c1585dec29cfcda4ba84e83ec6b94b16, type: 2}
+--- !u!114 &-1936325401315152664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892028637215623568}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50595577e5cd2c46a9d705227ca4dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  rayStart: {fileID: 1063044063669362956}
+  maxRayDist: 0.15

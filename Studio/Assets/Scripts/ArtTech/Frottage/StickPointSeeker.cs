@@ -13,6 +13,8 @@ public class StickPointSeeker : MonoBehaviour
     public float maxRayDist = 0.15f;
     XRGrabInteractable interactable;
 
+    int count = 0;
+
     bool isSelected = false;
 
     private void Start()

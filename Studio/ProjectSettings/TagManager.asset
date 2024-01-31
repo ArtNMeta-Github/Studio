@@ -10,6 +10,7 @@ TagManager:
   - XRSocketAble
   - FrottagePaper
   - CollagePaper
+  - CollageCanvas
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,4 @@
-using PaintIn3D;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,15 +11,12 @@ public class CollageStamp : MonoBehaviour
     Transform target;
 
     public Transform stampHead;
-    //public GameObject painter;
 
     Vector3 newColliderSize = new Vector3(0.2f, 0.2f, 0.01f);
     Vector3 hitPoint;
 
     private void Start()
     {
-        //painter.SetActive(false);
-
         grabInteractable = GetComponent<XRGrabInteractable>();
         grabInteractable.activated.AddListener(x => TryDetachTarget());
         grabInteractable.deactivated.AddListener(x => PlaceTarget());
@@ -45,7 +42,11 @@ public class CollageStamp : MonoBehaviour
 
         var mat = target.GetComponent<Renderer>().material;
         mat.SetFloat("_OnMask", 1f);
-        target.GetComponent<Collage>().SwitchToOrigin();
+
+        var collage = target.GetComponent<Collage>();
+        collage.InstanceOrigin();
+        collage.ChangeBoxColliderValue(hitPoint, newColliderSize, LayerMask.NameToLayer("Brush"));
+        //collage.ChangeBoxColliderValue(hitPoint, newColliderSize);
 
         target.parent = transform;
     }
@@ -55,9 +56,7 @@ public class CollageStamp : MonoBehaviour
         if(target == null)
             return;
 
-        //painter.SetActive(false);
-
-        target.GetComponent<Collage>().SetBoxColliderValue(hitPoint, newColliderSize);
+        target.GetComponent<CollageStickerSeeker>().enabled = true;
 
         target.parent = null;
         target = null;
